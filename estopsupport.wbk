@@ -17,18 +17,27 @@
         "right": 70,
         "top": 30
       },
-      "measurements": [],
+      "measurements": [
+        {
+          "expr": "MAX I(R5)",
+          "format": "3~A"
+        },
+        {
+          "expr": "MAX V(Net-_J4-Pin_1_)",
+          "format": "3~V"
+        }
+      ],
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(247, 129, 191)",
-          "signal": "I(R1)",
+          "color": "rgb(228, 26, 28)",
+          "signal": "I(R5)",
           "trace_type": 258
         },
         {
-          "color": "rgb(102, 194, 165)",
-          "signal": "I(SU1)",
-          "trace_type": 258
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(Net-_J4-Pin_1_)",
+          "trace_type": 257
         }
       ]
     }
