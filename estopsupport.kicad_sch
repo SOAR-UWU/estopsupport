@@ -4,6 +4,14 @@
 	(generator_version "10.0")
 	(uuid "ca51e45a-2cf8-42c4-bf53-5bd38d2544be")
 	(paper "A4")
+	(title_block
+		(title "E-Stop Support Circuit")
+		(date "2026-04-10")
+		(rev "1")
+		(company "SUTD Organisation of Autonomous Robotics - UnderWater Unit")
+		(comment 1 "Done by: Goh Xin Yang")
+		(comment 2 "Designed to operate a Kilovac using 2 5V switches in series")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
@@ -987,6 +995,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1311,193 +1507,6 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:1N4007"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4007"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?41*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "1N4007_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4007_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1998,6 +2007,105 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -2827,6 +2935,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Shunt for measuring fault\nNon-automated but simpler\nNominal Isense is about 0.33 mA\nFault Isense is >5 mA"
+		(exclude_from_sim no)
+		(at 81.026 71.628 0)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+			(justify right top)
+		)
+		(uuid "32e43be5-664c-4cf2-859f-a1e589181992")
+	)
 	(text "To Kilovac"
 		(exclude_from_sim no)
 		(at 121.666 63.754 0)
@@ -2836,17 +2955,6 @@
 			)
 		)
 		(uuid "37a7d812-d7cf-445c-a8d1-42433a4be0b1")
-	)
-	(text "Note: Need adapter\nOutput +12V Analog Current\n0.33-7.5mA"
-		(exclude_from_sim no)
-		(at 74.676 81.026 0)
-		(effects
-			(font
-				(size 0.508 0.508)
-			)
-			(justify left)
-		)
-		(uuid "67afeed7-8979-4f06-8aab-a4b3cdbe80ed")
 	)
 	(junction
 		(at 39.37 63.5)
@@ -2861,22 +2969,10 @@
 		(uuid "158094e4-d312-4923-b5a5-7f5099bc1919")
 	)
 	(junction
-		(at 58.42 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17f962bd-b511-4341-8227-45dde8c7e5ea")
-	)
-	(junction
 		(at 104.14 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d9fb494-6136-4afa-9e12-3c7dad7c339a")
-	)
-	(junction
-		(at 78.74 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32441683-e1c8-419a-b5f0-ad4823c29740")
 	)
 	(junction
 		(at 39.37 78.74)
@@ -2891,40 +2987,16 @@
 		(uuid "78416845-6021-4e2f-b884-51c650b5ccea")
 	)
 	(junction
-		(at 48.26 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86c21411-12dc-4603-96e4-0ab8b495996e")
-	)
-	(junction
 		(at 24.13 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93a7afd4-53d0-47c4-b824-8dc69e049bfd")
 	)
 	(junction
-		(at 81.28 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5d6d6bf-d69c-4801-8bd6-984345443f7c")
-	)
-	(junction
-		(at 86.36 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad260fc3-2cda-4ecd-982f-8deb0318c6b9")
-	)
-	(junction
 		(at 102.87 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1bcba01-8030-42f9-9a49-a4224b8f2b60")
-	)
-	(junction
-		(at 83.82 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc8be6ef-b74f-4e8f-ab7d-c6828bd732e3")
 	)
 	(junction
 		(at 93.98 49.53)
@@ -2992,16 +3064,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 68.58) (xy 83.82 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2465e1b0-dc1a-4eb3-9bcf-94bb507a9c91")
-	)
-	(wire
-		(pts
 			(xy 48.26 63.5) (xy 50.8 63.5)
 		)
 		(stroke
@@ -3059,16 +3121,6 @@
 			(type default)
 		)
 		(uuid "439e3837-bace-4e5b-ae94-0fcfce670f68")
-	)
-	(wire
-		(pts
-			(xy 48.26 19.05) (xy 58.42 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "468dc0ad-252e-49d3-ad3d-375b2a12013d")
 	)
 	(wire
 		(pts
@@ -3142,23 +3194,13 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 68.58) (xy 86.36 68.58)
+			(xy 82.55 69.85) (xy 82.55 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8389cded-4a5d-453c-8b85-838a29fdb7a8")
-	)
-	(wire
-		(pts
-			(xy 76.2 68.58) (xy 78.74 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88381565-6ff4-4b7b-a32d-13915340a6be")
+		(uuid "8136f533-7ac1-4180-8fa0-c8c4edf6444d")
 	)
 	(wire
 		(pts
@@ -3202,13 +3244,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 68.58) (xy 81.28 68.58)
+			(xy 82.55 68.58) (xy 86.36 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca74020a-5698-4b31-a672-7df56f91fc82")
+		(uuid "be853d40-ecf4-42a5-b2c3-cd1ed866c6ae")
 	)
 	(wire
 		(pts
@@ -3519,6 +3561,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 88.9 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b833d7c-0e8d-41da-a012-4732f9a9b417")
+		(property "Reference" "H3"
+			(at 91.44 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 91.44 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "estopsupport"
+				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SS36")
 		(at 107.95 68.58 0)
 		(unit 1)
@@ -3755,7 +3873,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 86.36 76.2 0)
+		(at 82.55 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3766,7 +3884,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e797731-9351-4e14-b527-d3b502557eed")
 		(property "Reference" "#PWR014"
-			(at 86.36 82.55 0)
+			(at 82.55 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3777,7 +3895,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 86.36 81.28 0)
+			(at 82.55 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3787,7 +3905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 86.36 76.2 0)
+			(at 82.55 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3798,7 +3916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 76.2 0)
+			(at 82.55 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +3927,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 76.2 0)
+			(at 82.55 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4147,7 +4265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 22.352 67.31 90)
 			(hide yes)
 			(show_name no)
@@ -4847,7 +4965,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "Device:D")
 		(at 39.37 67.31 90)
 		(unit 1)
 		(body_style 1)
@@ -4880,8 +4998,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 43.815 67.31 0)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 39.37 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4902,7 +5020,7 @@
 				)
 			)
 		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
+		(property "Description" "Diode"
 			(at 39.37 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5062,7 +5180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 37.592 82.55 90)
 			(hide yes)
 			(show_name no)
@@ -5478,7 +5596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 37.592 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -5543,6 +5661,82 @@
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 88.9 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab89eb29-a759-411e-9d5e-4b34562c9a66")
+		(property "Reference" "H1"
+			(at 91.44 24.1299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 91.44 26.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 88.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 88.9 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "estopsupport"
+				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -5694,7 +5888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 81.28 65.278 90)
 			(hide yes)
 			(show_name no)
@@ -5743,39 +5937,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 78.74 73.66 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 101.6 25.4 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "befe0a4b-315d-4d3e-9135-d098b86751f6")
-		(property "Reference" "J7"
-			(at 80.01 76.2 90)
+		(uuid "bd0e41b7-042b-4826-a075-beea903fe573")
+		(property "Reference" "H2"
+			(at 104.14 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "TAP_SENSE"
-			(at 80.01 78.74 90)
+		(property "Value" "M3"
+			(at 104.14 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 78.74 73.66 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 101.6 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5786,7 +5982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 73.66 0)
+			(at 101.6 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5796,8 +5992,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 78.74 73.66 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 101.6 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5806,23 +6002,11 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "5d09eb0c-1c0f-4d9c-a64c-d2a6b3f77bbc")
-		)
-		(pin "4"
-			(uuid "c9af7dab-9bd6-45bb-87dc-7700a425e3fc")
-		)
-		(pin "3"
-			(uuid "e94da65e-0e5a-4c26-acf2-d6ad1787afe6")
-		)
-		(pin "2"
-			(uuid "4c6dc4b0-dc55-4917-b807-8dcdba9af2ef")
 		)
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J7")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -6168,7 +6352,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 72.39 0)
+		(at 82.55 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6179,7 +6363,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3120be3-667a-4edd-8e6b-21f003a8f67b")
 		(property "Reference" "R4"
-			(at 88.9 71.1199 0)
+			(at 85.09 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6190,7 +6374,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 88.9 73.6599 0)
+			(at 85.09 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6200,8 +6384,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 84.582 72.39 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 80.772 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6212,7 +6396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 72.39 0)
+			(at 82.55 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6223,7 +6407,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 86.36 72.39 0)
+			(at 82.55 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6561,6 +6745,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 101.6 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea9be447-0dc8-4658-8250-6eb912ddf100")
+		(property "Reference" "H4"
+			(at 104.14 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 104.14 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 101.6 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 101.6 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "estopsupport"
+				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 50.8 72.39 0)
 		(unit 1)
@@ -6748,7 +7008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal"
 			(at 50.8 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6845,7 +7105,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 44.45 65.278 90)
 			(hide yes)
 			(show_name no)
@@ -6970,10 +7230,6 @@
 				)
 			)
 		)
-	)
-	(group ""
-		(uuid "20786171-596c-4b43-bbda-aca9e25a17b7")
-		(members "67afeed7-8979-4f06-8aab-a4b3cdbe80ed" "befe0a4b-315d-4d3e-9135-d098b86751f6")
 	)
 	(group ""
 		(uuid "8786041f-3348-4cd5-96bb-8bec603b5de8")
