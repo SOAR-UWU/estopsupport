@@ -2935,7 +2935,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Shunt for measuring fault\nNon-automated but simpler\nNominal Isense is about 0.33 mA\nFault Isense is >5 mA"
+	(text "Sense resistor for measuring Isense\nNon-automated but simpler\nNominal Isense is about 0.33 mA\nFault Isense is >5 mA"
 		(exclude_from_sim no)
 		(at 81.026 71.628 0)
 		(effects
@@ -6373,7 +6373,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 85.09 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
