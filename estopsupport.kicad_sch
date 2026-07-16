@@ -3882,6 +3882,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 19.05) (xy 41.91 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "048c1d55-0cbb-4232-8d1b-e39d5425064e")
+	)
+	(wire
+		(pts
 			(xy 50.8 91.44) (xy 53.34 91.44)
 		)
 		(stroke
@@ -3929,6 +3939,16 @@
 			(type default)
 		)
 		(uuid "10af30a9-44d8-490a-90f4-07a88265f6cc")
+	)
+	(wire
+		(pts
+			(xy 43.18 21.59) (xy 31.75 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e9545b-68a8-4175-aa5e-24d10c0c9786")
 	)
 	(wire
 		(pts
@@ -4072,7 +4092,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 19.05) (xy 90.17 19.05)
+			(xy 148.59 19.05) (xy 156.21 19.05)
 		)
 		(stroke
 			(width 0)
@@ -4102,13 +4122,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 57.15) (xy 93.98 58.42)
+			(xy 34.29 19.05) (xy 31.75 19.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "91c038cc-1ed2-4f6a-8b00-bcc415a21005")
+		(uuid "93771a8b-fb47-4df3-af1d-8516f918c5c4")
 	)
 	(wire
 		(pts
@@ -4212,7 +4232,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 19.05) (xy 74.93 19.05)
+			(xy 133.35 19.05) (xy 140.97 19.05)
 		)
 		(stroke
 			(width 0)
@@ -4471,7 +4491,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 93.98 53.34 180)
+		(at 38.1 19.05 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4479,32 +4499,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "165f8508-5249-4b0d-81dd-8619cf750a0f")
 		(property "Reference" "F1"
-			(at 96.52 52.0699 0)
+			(at 38.1 14.986 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "Fuse"
-			(at 96.52 54.6099 0)
+		(property "Value" "5A"
+			(at 38.1 17.018 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 95.758 53.34 90)
+			(at 38.1 17.272 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +4532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 53.34 0)
+			(at 38.1 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4526,7 +4543,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 93.98 53.34 0)
+			(at 38.1 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5132,7 +5149,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 36.83 19.05 0)
+		(at 48.26 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5143,7 +5160,7 @@
 		(fields_autoplaced yes)
 		(uuid "480d4f26-fcbd-4e4b-9ff8-33876a72bb87")
 		(property "Reference" "J6"
-			(at 39.37 19.0499 0)
+			(at 50.8 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5154,7 +5171,7 @@
 			)
 		)
 		(property "Value" "PWR"
-			(at 39.37 21.5899 0)
+			(at 50.8 21.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5165,7 +5182,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5176,7 +5193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5187,7 +5204,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5198,7 +5215,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5209,7 +5226,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5220,7 +5237,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5231,7 +5248,7 @@
 			)
 		)
 		(property "Sim.Params" "dc=12"
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5242,7 +5259,7 @@
 			)
 		)
 		(property "JLCPCB Part #" ""
-			(at 36.83 19.05 0)
+			(at 48.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5666,7 +5683,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 48.26 19.05 0)
+		(at 114.3 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5677,7 +5694,7 @@
 		(fields_autoplaced yes)
 		(uuid "571deb80-cb61-4118-8ed7-b21d55f13f72")
 		(property "Reference" "#PWR012"
-			(at 48.26 25.4 0)
+			(at 114.3 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5688,7 +5705,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 48.26 22.86 0)
+			(at 114.3 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5698,7 +5715,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5709,7 +5726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5720,7 +5737,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5978,7 +5995,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "47u"
 			(at 115.57 53.7209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5989,7 +6006,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 112.7252 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -6128,7 +6145,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 93.98 49.53 0)
+		(at 93.98 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6139,7 +6156,7 @@
 		(fields_autoplaced yes)
 		(uuid "73918a59-45b1-49ad-b11a-d818da6e8a80")
 		(property "Reference" "#PWR06"
-			(at 93.98 53.34 0)
+			(at 93.98 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6150,7 +6167,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 93.98 44.45 0)
+			(at 93.98 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6160,7 +6177,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 49.53 0)
+			(at 93.98 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,7 +6188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 49.53 0)
+			(at 93.98 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6199,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 93.98 49.53 0)
+			(at 93.98 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6514,7 +6531,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 48.26 19.05 0)
+		(at 114.3 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6525,7 +6542,7 @@
 		(fields_autoplaced yes)
 		(uuid "97bad2d2-0dcd-4999-a2ae-69907ff53b52")
 		(property "Reference" "#FLG05"
-			(at 48.26 17.145 0)
+			(at 114.3 17.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6536,7 +6553,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 48.26 13.97 0)
+			(at 114.3 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6546,7 +6563,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6557,7 +6574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6568,7 +6585,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 48.26 19.05 0)
+			(at 114.3 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6592,7 +6609,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 74.93 19.05 0)
+		(at 140.97 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6603,7 +6620,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d6b81fc-1181-4981-9ab9-f6ecd8b53598")
 		(property "Reference" "#FLG06"
-			(at 74.93 17.145 0)
+			(at 140.97 17.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6614,7 +6631,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 74.93 13.97 0)
+			(at 140.97 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6624,7 +6641,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 19.05 0)
+			(at 140.97 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +6652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 19.05 0)
+			(at 140.97 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6646,7 +6663,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 74.93 19.05 0)
+			(at 140.97 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +6687,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 58.42 19.05 0)
+		(at 124.46 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6681,7 +6698,7 @@
 		(fields_autoplaced yes)
 		(uuid "a28efbdb-7c9c-45ec-a418-48b77cfdc277")
 		(property "Reference" "#FLG03"
-			(at 58.42 17.145 0)
+			(at 124.46 17.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6692,7 +6709,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 58.42 13.97 0)
+			(at 124.46 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6702,7 +6719,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6713,7 +6730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6724,7 +6741,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7797,7 +7814,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 19.05 0)
+		(at 124.46 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7808,7 +7825,7 @@
 		(fields_autoplaced yes)
 		(uuid "de57d5f7-0a50-48f8-bc4e-229089865628")
 		(property "Reference" "#PWR05"
-			(at 58.42 25.4 0)
+			(at 124.46 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7819,7 +7836,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 58.42 24.13 0)
+			(at 124.46 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7829,7 +7846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7840,7 +7857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7851,7 +7868,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 19.05 0)
+			(at 124.46 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7875,7 +7892,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 90.17 19.05 0)
+		(at 156.21 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7886,7 +7903,7 @@
 		(fields_autoplaced yes)
 		(uuid "de6476b5-4ac2-4a2d-9c0c-06ec3a983a39")
 		(property "Reference" "#FLG04"
-			(at 90.17 17.145 0)
+			(at 156.21 17.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7897,7 +7914,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 90.17 13.97 0)
+			(at 156.21 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7907,7 +7924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 19.05 0)
+			(at 156.21 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7918,7 +7935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 19.05 0)
+			(at 156.21 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7929,7 +7946,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 90.17 19.05 0)
+			(at 156.21 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8031,7 +8048,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 82.55 19.05 0)
+		(at 148.59 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8042,7 +8059,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8ce9fd3-85b4-45c7-8af8-b1f5a44322a9")
 		(property "Reference" "#PWR011"
-			(at 82.55 22.86 0)
+			(at 148.59 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8053,7 +8070,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 82.55 13.97 0)
+			(at 148.59 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8063,7 +8080,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 19.05 0)
+			(at 148.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8074,7 +8091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 19.05 0)
+			(at 148.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8085,7 +8102,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 82.55 19.05 0)
+			(at 148.59 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8352,7 +8369,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 67.31 19.05 0)
+		(at 133.35 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8363,7 +8380,7 @@
 		(fields_autoplaced yes)
 		(uuid "ef49d4b4-1498-4e40-8bb2-43f2547779c8")
 		(property "Reference" "#PWR013"
-			(at 67.31 22.86 0)
+			(at 133.35 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8374,7 +8391,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 67.31 13.97 0)
+			(at 133.35 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8384,7 +8401,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 19.05 0)
+			(at 133.35 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8395,7 +8412,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 19.05 0)
+			(at 133.35 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8406,7 +8423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 67.31 19.05 0)
+			(at 133.35 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
