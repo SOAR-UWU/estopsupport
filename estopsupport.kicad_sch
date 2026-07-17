@@ -1911,172 +1911,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SS36"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SS36"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMA"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "60V 3A Schottky Diode, SMA"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*SMA*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SS36_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SS36_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Isolator:PC817"
 			(pin_names
 				(offset 1.016)
@@ -3758,7 +3592,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Sense resistor for measuring Isense\nNon-automated but simpler\nNominal Isense is about 0.33 mA\nFault Isense is >5 mA"
+	(text "Shunt for measuring Isense manually\nNominal Isense ~0.33 mA\nFault Isense >5 mA"
 		(exclude_from_sim no)
 		(at 81.026 71.628 0)
 		(effects
@@ -3795,12 +3629,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11db9ce7-4e6d-4ef5-82bf-b8383a35f758")
-	)
-	(junction
-		(at 113.03 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "158094e4-d312-4923-b5a5-7f5099bc1919")
 	)
 	(junction
 		(at 111.76 57.15)
@@ -3849,12 +3677,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa6c4830-5d49-4868-9292-15d7fdcf66db")
-	)
-	(junction
-		(at 102.87 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1bcba01-8030-42f9-9a49-a4224b8f2b60")
 	)
 	(junction
 		(at 53.34 78.74)
@@ -3982,26 +3804,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 68.58) (xy 113.03 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aa029ce-deae-4bf4-8b2a-6ad163f22aa1")
-	)
-	(wire
-		(pts
-			(xy 102.87 68.58) (xy 104.14 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b5b06d1-2ed4-48e2-81b5-6b1aa6d5d67c")
-	)
-	(wire
-		(pts
 			(xy 21.59 63.5) (xy 24.13 63.5)
 		)
 		(stroke
@@ -4049,16 +3851,6 @@
 			(type default)
 		)
 		(uuid "5e569a37-cac6-4411-b308-6dd2ebb17dfa")
-	)
-	(wire
-		(pts
-			(xy 102.87 66.04) (xy 102.87 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6249d04b-d0e3-470a-afbb-8ccf9371cd5b")
 	)
 	(wire
 		(pts
@@ -4132,16 +3924,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 66.04) (xy 114.3 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "975eecf2-a082-443e-9cbc-f94253376420")
-	)
-	(wire
-		(pts
 			(xy 76.2 63.5) (xy 77.47 63.5)
 		)
 		(stroke
@@ -4192,7 +3974,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 66.04) (xy 102.87 66.04)
+			(xy 101.6 66.04) (xy 114.3 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4408,7 +4190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c728809-f82d-4a53-b8c1-339f0d55892e")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 127 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4483,7 +4265,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4729,119 +4511,6 @@
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:SS36")
-		(at 107.95 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e431712-5d17-4a45-80a8-21672313ef14")
-		(property "Reference" "D1"
-			(at 107.6325 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SS36"
-			(at 107.6325 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 107.95 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "60V 3A Schottky Diode, SMA"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C16015"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b29b1601-97d0-45ce-a8ed-a6e085e58d46")
-		)
-		(pin "2"
-			(uuid "63390eed-5317-4edb-8952-4bc08e4a8d1b")
-		)
-		(instances
-			(project "estopsupport"
-				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5159,7 +4828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "480d4f26-fcbd-4e4b-9ff8-33876a72bb87")
-		(property "Reference" "J6"
+		(property "Reference" "J1"
 			(at 50.8 19.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5278,7 +4947,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J6")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -5296,7 +4965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cba7784-83c5-46f1-b696-e93f90fc3107")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 104.14 52.0699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5360,7 +5029,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5456,7 +5125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5392afba-7c31-49ca-96a3-005314043ff1")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 26.67 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5531,7 +5200,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5849,7 +5518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fee6cf9-3be9-4eed-a769-f31e9c6f1e91")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 17.145 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5966,7 +5635,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5984,7 +5653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71799b20-e1b4-4404-b3c7-ecd18493856b")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 115.57 51.1809 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6059,7 +5728,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -6233,7 +5902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77d10cc8-b235-4726-98f4-a3f5b017e14c")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 41.91 66.0399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6330,7 +5999,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6426,7 +6095,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b341b78-f6df-4cdd-a6bf-71ef561c4837")
-		(property "Reference" "R6"
+		(property "Reference" "R3"
 			(at 41.91 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6523,7 +6192,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "R6")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -6978,7 +6647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "abb54439-98df-4801-abac-d2fff942c501")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 121.92 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7057,6 +6726,7 @@
 		)
 		(property "Sim.Params" "l=3"
 			(at 119.38 66.04 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7085,7 +6755,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -7181,7 +6851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3131828-a400-497c-bc32-c6e02622997f")
-		(property "Reference" "R2"
+		(property "Reference" "R6"
 			(at 81.28 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7254,7 +6924,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "R2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -7360,7 +7030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c08b5314-3099-4892-8507-64fb00260ec9")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 70.8025 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,7 +7114,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -7462,7 +7132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccd70c54-15ce-4366-b29f-311436292d6c")
-		(property "Reference" "J5"
+		(property "Reference" "J6"
 			(at 15.875 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7550,6 +7220,7 @@
 		)
 		(property "Sim.Params" "dc=5"
 			(at 15.24 19.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7578,7 +7249,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J5")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -7596,7 +7267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d19b1c6b-9610-4424-985f-aa80ebeab6d3")
-		(property "Reference" "J1"
+		(property "Reference" "J4"
 			(at 17.145 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7713,7 +7384,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J1")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8457,7 +8128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5c7893c-647c-4cdf-a177-606fc8c76a64")
-		(property "Reference" "J4"
+		(property "Reference" "J5"
 			(at 58.42 83.8199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8561,7 +8232,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "J4")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8579,7 +8250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9397fa2-17a2-4cb6-8bfe-48d0672f165e")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 44.45 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8652,7 +8323,7 @@
 		(instances
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
