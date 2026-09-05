@@ -96,7 +96,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(grid_origin 35 31.275)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
@@ -9410,6 +9409,22 @@
 		(uuid "98f77b2d-c662-4f00-b6a6-180e14ab690f")
 	)
 	(segment
+		(start 70 37.1025)
+		(end 74.000001 41.102501)
+		(width 1.524)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_1)")
+		(uuid "48e57874-ea58-4b8a-b7ad-085b72b0a3a1")
+	)
+	(segment
+		(start 74.000001 41.102501)
+		(end 74.000001 43.7875)
+		(width 1.524)
+		(layer "F.Cu")
+		(net "Net-(J1-Pin_1)")
+		(uuid "e00040dd-29da-4edc-b4f2-adc4230009c3")
+	)
+	(segment
 		(start 50 42.275)
 		(end 50 39.925)
 		(width 0.508)
@@ -9617,22 +9632,6 @@
 		(layer "F.Cu")
 		(net "Net-(J2-Pin_1)")
 		(uuid "da405725-4487-4b7a-91ca-04218f5d0410")
-	)
-	(segment
-		(start 70 37.1025)
-		(end 74.000001 41.102501)
-		(width 1.524)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_1)")
-		(uuid "48e57874-ea58-4b8a-b7ad-085b72b0a3a1")
-	)
-	(segment
-		(start 74.000001 41.102501)
-		(end 74.000001 43.7875)
-		(width 1.524)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_1)")
-		(uuid "e00040dd-29da-4edc-b4f2-adc4230009c3")
 	)
 	(zone
 		(net "+BATT")
