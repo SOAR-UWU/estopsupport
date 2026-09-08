@@ -5460,7 +5460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric"
 			(at 117.602 85.09 90)
 			(hide yes)
 			(show_name no)
