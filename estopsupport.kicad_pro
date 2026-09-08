@@ -147,7 +147,7 @@
       "rules": {
         "max_error": 0.005,
         "min_clearance": 0.3048,
-        "min_connection": 0.0,
+        "min_connection": 0.3,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.5,
@@ -213,7 +213,8 @@
         0.0,
         0.4064,
         0.508,
-        1.524
+        1.524,
+        6.096
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -523,18 +524,36 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.508,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 6.096,
+        "tuning_profile": ""
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "+BATT": [
+        "Power"
+      ],
+      "GND": [
+        "Power"
+      ],
+      "Net-(J1-Pin_3)": [
+        "Power"
+      ]
+    },
     "netclass_patterns": [
       {
         "netclass": "Default",
@@ -738,7 +757,7 @@
         "uuid": "ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
       }
     ],
-    "used_designators": "K1,R7-8,F1,Q1,D4-5,#PWR20-22",
+    "used_designators": "#PWR13,#PWR20-23,D4-5,Q1,F1,R7-9,K1",
     "variants": []
   },
   "sheets": [
