@@ -553,6 +553,9 @@
       ],
       "Net-(J1-Pin_3)": [
         "Power"
+      ],
+      "POWER_OUT": [
+        "Power"
       ]
     },
     "netclass_patterns": [
