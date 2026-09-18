@@ -4489,6 +4489,12 @@
 		(uuid "2579982e-5f2b-4de0-9224-86b9cea27d47")
 	)
 	(junction
+		(at 119.38 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e066652-a781-474a-891d-d78cbf07b2eb")
+	)
+	(junction
 		(at 128.27 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4499,6 +4505,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "690bd73f-3413-4c0c-9b44-675ff5b1cb11")
+	)
+	(junction
+		(at 93.98 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7123a2c7-5ef0-439b-b430-f659555f2a76")
 	)
 	(junction
 		(at 26.67 63.5)
@@ -4513,10 +4525,10 @@
 		(uuid "8b733361-fcfa-4fa4-ad70-6bfc9bbf11e1")
 	)
 	(junction
-		(at 102.87 48.26)
+		(at 119.38 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aa0141b4-a5b5-4eff-b202-dd30ee8667fc")
+		(uuid "9dafb4e9-6f54-4d74-8659-9f5d1a8aa730")
 	)
 	(junction
 		(at 110.49 66.04)
@@ -4553,6 +4565,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8b2883d-7599-42fb-af72-8f8aa56b914c")
+	)
+	(junction
+		(at 102.87 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3e10668-bbdc-45da-a6d1-4e5aaff70195")
 	)
 	(wire
 		(pts
@@ -4806,7 +4824,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 48.26) (xy 93.98 49.53)
+			(xy 93.98 39.37) (xy 93.98 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4906,6 +4924,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 88.9) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad4678f6-b97a-4c54-8352-3cdbfb9a26e9")
+	)
+	(wire
+		(pts
 			(xy 153.67 72.39) (xy 152.4 72.39)
 		)
 		(stroke
@@ -4923,6 +4951,16 @@
 			(type default)
 		)
 		(uuid "b7a02f8a-9a9a-45c9-89a7-81d62b58e7fd")
+	)
+	(wire
+		(pts
+			(xy 119.38 81.28) (xy 121.92 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b83894a5-ab39-416e-a0e7-a7afe6548517")
 	)
 	(wire
 		(pts
@@ -5006,13 +5044,23 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 57.15) (xy 93.98 58.42)
+			(xy 93.98 48.26) (xy 93.98 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ef38e4c6-1901-47d6-908a-8a98c66ae5d3")
+	)
+	(wire
+		(pts
+			(xy 93.98 48.26) (xy 102.87 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f957296a-dbcf-4956-ba0b-17ce6e5e86c5")
 	)
 	(wire
 		(pts
@@ -5249,84 +5297,6 @@
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 102.87 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b73cdb8-e852-4f96-8b6e-7f824feecf90")
-		(property "Reference" "#PWR01"
-			(at 102.87 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 102.87 43.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 102.87 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "15fe6aaf-cefe-409c-8493-5b7209f2a420")
-		)
-		(instances
-			(project "estopsupport"
-				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5590,10 +5560,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1ef37d95-f0a0-4748-81bb-e26089280df2")
 		(property "Reference" "R1"
-			(at 116.84 83.8199 0)
+			(at 117.602 84.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5603,8 +5572,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "15"
-			(at 116.84 86.3599 0)
+		(property "Value" "33"
+			(at 117.602 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5744,7 +5713,7 @@
 	(symbol
 		(lib_name "MountingHole_1")
 		(lib_id "Mechanical:MountingHole")
-		(at 88.9 38.1 0)
+		(at 64.77 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5755,7 +5724,7 @@
 		(fields_autoplaced yes)
 		(uuid "2b833d7c-0e8d-41da-a012-4732f9a9b417")
 		(property "Reference" "H3"
-			(at 91.44 36.8299 0)
+			(at 67.31 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5766,7 +5735,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 91.44 39.3699 0)
+			(at 67.31 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5777,7 +5746,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 88.9 38.1 0)
+			(at 64.77 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5788,7 +5757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 38.1 0)
+			(at 64.77 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5799,7 +5768,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 88.9 38.1 0)
+			(at 64.77 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5810,7 +5779,7 @@
 			)
 		)
 		(property "JLCPCB Part #" ""
-			(at 88.9 38.1 0)
+			(at 64.77 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7420,7 +7389,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 93.98 48.26 0)
+		(at 93.98 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7431,7 +7400,7 @@
 		(fields_autoplaced yes)
 		(uuid "73918a59-45b1-49ad-b11a-d818da6e8a80")
 		(property "Reference" "#PWR06"
-			(at 93.98 52.07 0)
+			(at 93.98 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7442,7 +7411,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 93.98 43.18 0)
+			(at 93.98 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7452,7 +7421,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 48.26 0)
+			(at 93.98 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7463,7 +7432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 48.26 0)
+			(at 93.98 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7474,7 +7443,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 93.98 48.26 0)
+			(at 93.98 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7519,7 +7488,7 @@
 			)
 		)
 		(property "Value" "QLRELAY JQX-V7H 012-1HP"
-			(at 121.412 84.328 0)
+			(at 123.952 82.804 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7701,6 +7670,87 @@
 			(project "estopsupport"
 				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 121.92 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8d8fad11-6b52-492e-8c97-c73b2c47d0d4")
+		(property "Reference" "R8"
+			(at 126.238 84.836 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "33"
+			(at 126.238 87.376 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1812_4532Metric"
+			(at 120.142 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 121.92 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5259ba9b-fa6b-44fb-91a1-b4a28e5cc818")
+		)
+		(pin "1"
+			(uuid "8e47500b-5be0-40dd-999f-02ca54881d4b")
+		)
+		(instances
+			(project "estopsupport"
+				(path "/ca51e45a-2cf8-42c4-bf53-5bd38d2544be"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8021,7 +8071,7 @@
 	(symbol
 		(lib_name "MountingHole_2")
 		(lib_id "Mechanical:MountingHole")
-		(at 88.9 25.4 0)
+		(at 64.77 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8032,7 +8082,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab89eb29-a759-411e-9d5e-4b34562c9a66")
 		(property "Reference" "H1"
-			(at 91.44 24.1299 0)
+			(at 67.31 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8043,7 +8093,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 91.44 26.6699 0)
+			(at 67.31 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8054,7 +8104,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 88.9 25.4 0)
+			(at 64.77 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8065,7 +8115,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 25.4 0)
+			(at 64.77 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8076,7 +8126,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 88.9 25.4 0)
+			(at 64.77 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8087,7 +8137,7 @@
 			)
 		)
 		(property "JLCPCB Part #" ""
-			(at 88.9 25.4 0)
+			(at 64.77 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8278,7 +8328,7 @@
 	(symbol
 		(lib_name "MountingHole_3")
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 25.4 0)
+		(at 77.47 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8289,7 +8339,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd0e41b7-042b-4826-a075-beea903fe573")
 		(property "Reference" "H2"
-			(at 104.14 24.1299 0)
+			(at 80.01 24.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8300,7 +8350,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 104.14 26.6699 0)
+			(at 80.01 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8311,7 +8361,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 25.4 0)
+			(at 77.47 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8322,7 +8372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 25.4 0)
+			(at 77.47 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8333,7 +8383,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 25.4 0)
+			(at 77.47 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8344,7 +8394,7 @@
 			)
 		)
 		(property "JLCPCB Part #" ""
-			(at 101.6 25.4 0)
+			(at 77.47 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8698,7 +8748,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 93.98 53.34 180)
+		(at 93.98 44.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8709,7 +8759,7 @@
 		(fields_autoplaced yes)
 		(uuid "d449c1bc-c38e-4d1a-a596-f168d6df0f7c")
 		(property "Reference" "F1"
-			(at 96.52 52.0699 0)
+			(at 96.52 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8720,7 +8770,7 @@
 			)
 		)
 		(property "Value" "0.5A"
-			(at 96.52 54.6099 0)
+			(at 96.52 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8731,7 +8781,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 95.758 53.34 90)
+			(at 95.758 44.45 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8742,7 +8792,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 53.34 0)
+			(at 93.98 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8753,7 +8803,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 93.98 53.34 0)
+			(at 93.98 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9195,7 +9245,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 38.1 0)
+		(at 77.47 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9206,7 +9256,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea9be447-0dc8-4658-8250-6eb912ddf100")
 		(property "Reference" "H4"
-			(at 104.14 36.8299 0)
+			(at 80.01 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9217,7 +9267,7 @@
 			)
 		)
 		(property "Value" "M3"
-			(at 104.14 39.3699 0)
+			(at 80.01 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9228,7 +9278,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 101.6 38.1 0)
+			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9239,7 +9289,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 38.1 0)
+			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9250,7 +9300,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 38.1 0)
+			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9261,7 +9311,7 @@
 			)
 		)
 		(property "JLCPCB Part #" ""
-			(at 101.6 38.1 0)
+			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
