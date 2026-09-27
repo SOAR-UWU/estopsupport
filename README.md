@@ -2,8 +2,6 @@
 Driver Circuit for a Kilovac EV200 Contactor. Takes two switch inputs, expected to run at 5V with low current.
 Theoretically, this can accept any relay or contactor with sufficiently high coil voltage, matched to the battery input, and has in-built back-emf suppression.
 
-Battery voltage side is not used. This is because the PROFET has a threshold voltage of 5.5V.
-
 # Expected Operating Range
 
 | Name            | Value     | Unit |
@@ -44,3 +42,5 @@ Normal Operation
 
 ![5v](estop-5v.png)
 5V Relay Control
+
+Battery voltage side is not used. This is because the PROFET has a threshold voltage of 5.5V.
