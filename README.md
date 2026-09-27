@@ -1,16 +1,15 @@
 # Emergency-Stop Support Circuit
-Driver Circuit for a Kilovac EV200 Contactor. Takes two switch inputs, expected to run at 5V with low current.
-Theoretically, this can accept any relay or contactor with sufficiently high coil voltage, matched to the battery input, and has in-built back-emf suppression.
-
-Battery voltage side is not used. This is because the PROFET has a threshold voltage of 5.5V.
+Circuit using an automotive relay to control 80A of current through 2 inputs:
+- GPIO signal (2.7-5V)
+- Switch (Preferably Reed Switch)
 
 # Expected Operating Range
 
 | Name            | Value     | Unit |
 | --------------- | --------- | ---- |
 | Battery Voltage | 12 - 16.8 | V    |
-| Battery Current | ≤ 3       | A    |
-| Signal Voltage  | 5         | V    |
+| Battery Current | ≤ 80      | A    |
+| Signal Voltage  | 2.2 - 5   | V    |
 | Signal Current  | 0 - 1     | A    |
 | Tap Voltage     | 3.3       | V    |
 | Tap Current     | 1.5       | A    |
@@ -20,6 +19,8 @@ Battery voltage side is not used. This is because the PROFET has a threshold vol
 # [BTS6163D PROFET](https://www.infineon.com/assets/row/public/documents/10/49/infineon-bts6163d-ds-en.pdf?fileId=5546d4625a888733015aa3da01a1101e)
 This circuit is primarily based on the BTS6163 PROFET, which behaves like a P-type MOSFET.
 It is chosen due to the fault protection capabilities - it will fail open.
+
+Somewhat overkill for this case - the automotive relay should not draw any more than 0.5 mA.
 
 ## Sense Resistor
 There is a 1 kOhm resistor on the right side of the board that indicates whether the BTS6163D PROFET is in a fault condition.
@@ -35,12 +36,8 @@ This reduces electromagnetic interference - but is not important in this circuit
 
 # Order Parameters
 Material: FR-4
-Layers: 2
-Copper Weight: 1 oz
+Layers: 4
+Copper Weight: 2 oz
 
 # Recommended Wiring
-![normal](estop-normal.png)
-Normal Operation
-
-![5v](estop-5v.png)
-5V Relay Control
+![Compact](estop-uuv.png)
