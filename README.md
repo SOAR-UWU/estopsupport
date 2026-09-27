@@ -1,6 +1,10 @@
 # Emergency-Stop Support Circuit
-Driver Circuit for a Kilovac EV200 Contactor. Takes two switch inputs, expected to run at 5V with low current.
-Theoretically, this can accept any relay or contactor with sufficiently high coil voltage, matched to the battery input, and has in-built back-emf suppression.
+Driver Circuit for a Kilovac EV200 Contactor.
+Takes two switch inputs which are expected to run at 5V with low current.
+
+Theoretically, this can accept any relay or contactor that:
+- has sufficiently high coil voltage, matched to the battery input, or uses a coil economiser
+- has in-built back-emf suppression
 
 # Expected Operating Range
 
