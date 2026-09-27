@@ -6,6 +6,9 @@ Theoretically, this can accept any relay or contactor that:
 - has sufficiently high coil voltage, matched to the battery input, or uses a coil economiser
 - has in-built back-emf suppression
 
+# Variant: Integrated Automotive Relay
+See relay branch for details - board designed to consolidate parts for the sake of compactness.
+
 # Expected Operating Range
 
 | Name            | Value     | Unit |
